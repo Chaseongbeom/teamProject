@@ -4,13 +4,14 @@ import Login from './view/login';
 import Product from './view/product';
 import Table from './view/table';
 import Axios from './view/axios';
+import './App.css';
 
 function App() {
   return (
   <BrowserRouter>
   <nav>
-    <Link to='/'>메인화면</Link>
-    <br />
+  <div>
+    <h1> <Link to='/'>메인화면</Link> </h1>
     <Link to='/login'>로그인</Link>
     <br />
     <Link to='/product'>대출상품</Link>
@@ -18,6 +19,7 @@ function App() {
     <Link to='/table'>게시판</Link>
     <br />
     <Link to='/axios'>Axios</Link>
+    </div>
   </nav>
     <header>----------------------------------</header>
     <Routes>
